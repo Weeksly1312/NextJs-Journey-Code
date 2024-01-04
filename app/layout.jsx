@@ -1,5 +1,9 @@
 import "@styles/globals.css";
 
+// import my components
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
+
 export const metadata = {
   title: "Nextjs Journey Code",
   description: "My Journey to Learn Next.js",
@@ -13,7 +17,10 @@ export default function RootLayout({ children }) {
           <div className="gradient" />
         </div>
 
-        <main className="app">{children}</main>
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
       </body>
     </html>
   );
