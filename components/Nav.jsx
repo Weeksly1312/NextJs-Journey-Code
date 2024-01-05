@@ -45,7 +45,7 @@ const Nav = () => {
               Sign Out
             </button>
 
-            <Link href="/profile">
+            <Link href="/pages/profile">
               <Image
                 src={session?.user.image}
                 width={37}
@@ -90,7 +90,7 @@ const Nav = () => {
             {toggleDropdown && (
               <div className="dropdown">
                 <Link
-                  href="/profile"
+                  href="/pages/profile"
                   className="dropdown_link"
                   onClick={() => setToggleDropdown(false)}
                 >
